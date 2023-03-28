@@ -1,17 +1,17 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
+
 /**
- * free_dog - check the code for Holberton School students.
- * @d: decimal
- * Return: Always 0.
+ * free_dog - frees dogs
+ * @d: pointer to dog to free
+ *
+ * Return: void
  */
 void free_dog(dog_t *d)
 {
 	if (d)
 	{
-	if (d->name)
 		free(d->name);
-	if (d->owner)
 		free(d->owner);
 		free(d);
 	}
