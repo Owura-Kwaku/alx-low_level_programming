@@ -5,16 +5,15 @@
  * of a listint_t linked list.
  * @head: pointer to the first node
  *
- * Return: sum
+ * Return: add
  */
 int sum_listint(listint_t *head)
 {
-	int sum = 0;
+	int add = 0;
 
 	do {
-		sum += head->n;
+		add += head->n;
 		head = head->next;
 	} while (head != NULL);
-
-	return (sum);
+	return (add);
 }
