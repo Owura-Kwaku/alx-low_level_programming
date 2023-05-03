@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -15,9 +16,8 @@ size_t print_listint_safe(const listint_t *head)
 	if (head == NULL)
 		return (0);
 
-	do
-	{
-		count++;
+	do {
+		counter++;
 		printf("[%p] %d\n", (void *)head, head->n);
 		if (head->next >= head)
 		{

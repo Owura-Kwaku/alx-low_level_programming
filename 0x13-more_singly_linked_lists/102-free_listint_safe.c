@@ -17,8 +17,7 @@ size_t free_listint_safe(listint_t **h)
 		return (0);
 	node = *h;
 
-	do
-	{
+	do {
 		counter++;
 		node = (*h)->next;
 		free(*h);
