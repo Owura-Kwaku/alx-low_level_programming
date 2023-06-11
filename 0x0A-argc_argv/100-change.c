@@ -4,6 +4,13 @@
 #include <ctype.h>
 #include <stdbool.h>
 
+/**
+ * make_change - returns the min number of coins to make change
+ * for an amount of money
+ * @n: number of arguements
+ * Return: coins
+ */
+
 int make_change(int n)
 {
 	int coins, quarters, dimes, nickels, twocents, pennies;
