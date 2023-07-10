@@ -16,7 +16,7 @@ char *create_buffer(char *file)
 {
 	char *fileBuffer;
 
-	buffer = malloc(sizeof(char) * 1024);
+	fileBuffer = malloc(sizeof(char) * 1024);
 	if (fileBuffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 		}
 
 
-		r = read(openSource, fileBuffer, 1024);
+		readFile = read(openSource, fileBuffer, 1024);
 		openDestination = open(argv[2], O_WRONLY | O_APPEND);
 
 
